@@ -1,0 +1,87 @@
+.home {
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(185, 210, 231, 0.8),
+      rgba(208, 238, 243, 0.8)
+    ),
+    url("/bg.jpg");
+}
+
+.home__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90rem;
+  width: 92%;
+}
+
+.home__content-name {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+}
+
+.home__content-info {
+  margin: 3rem auto 0 auto;
+  max-width: 80rem;
+}
+
+.home__content-info p {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.home__content-button {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.btn {
+  background: #8bb2ec;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-12px);
+}
+
+@media screen and (max-width: 768px) {
+  .home__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 100%;
+  }
+
+  .home__content-name {
+    font-size: 2rem;
+  }
+
+  .home__content-info p {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+  }
+}
